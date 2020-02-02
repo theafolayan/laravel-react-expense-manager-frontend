@@ -10,7 +10,7 @@ export default class ExpenseTableRow extends Component {
     }
 
     deleteExpense() {
-        axios.delete('http://localhost:8000/api/expenses/' + this.props.obj.id)
+        axios.delete('https://laravel-react-expense-manager.herokuapp.com/api/expenses/' + this.props.obj.id)
             .then((res) => {
                 console.log('Expense removed deleted!')
             }).catch((error) => {
